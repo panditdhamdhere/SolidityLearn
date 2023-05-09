@@ -13,10 +13,17 @@ contract myContract {
     }
 }
 
-// view func
+// pure func
 
 contract MyContract {
     function add(uint x, uint y) external pure returns(uint) {
         return x + y;
     }
+}
+
+// return muiltiple value 
+
+function mathtime (uint sum, uint product) external pure returns (uint sum, uint product) {
+    sum = 5 + 5;
+    product = 5 * 5;
 }
