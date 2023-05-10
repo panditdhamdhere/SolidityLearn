@@ -27,3 +27,26 @@ function mathtime (uint sum, uint product) external pure returns (uint sum, uint
     sum = 5 + 5;
     product = 5 * 5;
 }
+
+
+// multiple values
+function mathtime (uint sum, uint product) external pure returns (uint sum, uint product) {
+    sum = 5 + 5;
+    product = 5 * 5;
+
+    return (sum, product)
+}
+
+
+// Double functions
+
+
+contract Contract {
+	function pandit(uint x) public pure returns(uint) {
+		return x * 2;
+	}
+	
+	function pandit(uint a, uint b) external pure returns(uint, uint) {
+		return (pandit(a), pandit(b));
+	}
+}
