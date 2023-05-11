@@ -50,3 +50,10 @@ contract Contract {
 		return (pandit(a), pandit(b));
 	}
 }
+
+contract Pandit {
+
+function krish {
+    
+}
+}
