@@ -51,9 +51,10 @@ contract Contract {
 	}
 }
 
+
 contract Pandit {
 
 function krish {
-    
+
 }
 }
