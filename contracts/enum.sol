@@ -12,4 +12,11 @@ Cars public car3 = Cars.Tavera;
 Cars public car4 = Cars.Tesla;
 }
 
-// enums helps us to write clean code
+// enums helps us to write clean codeS
+
+
+enum SolidityDev {
+  Pandit,
+  Yash,
+  Larry
+}
