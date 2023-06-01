@@ -17,4 +17,9 @@ contract func {
     function add(uint p) external view returns(uint) {
         return d + p;
     }
+
+    // pure 
+    function double (uint x) external pure returns (uint) {
+        return x * 2;
+    }
 }
