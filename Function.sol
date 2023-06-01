@@ -8,4 +8,13 @@ contract func {
     constructor(uint _d) {
         d = _d;
     }
+
+// external
+    function incre () external{
+        d++;
+    }
+// view
+    function add(uint p) external view returns(uint) {
+        return d + p;
+    }
 }
