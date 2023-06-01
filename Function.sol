@@ -9,17 +9,24 @@ contract func {
         d = _d;
     }
 
-// external
-    function incre () external{
+    // external
+    function incre() external {
         d++;
     }
-// view
-    function add(uint p) external view returns(uint) {
+
+    // view
+    function add(uint p) external view returns (uint) {
         return d + p;
     }
 
-    // pure 
-    function double (uint x) external pure returns (uint) {
+    // pure
+    function double(uint x) external pure returns (uint) {
         return x * 2;
+    }
+
+    // double overload
+
+    function double(uint pandit, uint tara) external pure returns (uint, uint) {
+        (double(pandit), double(tara));
     }
 }
