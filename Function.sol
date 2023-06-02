@@ -20,13 +20,17 @@ contract func {
     }
 
     // pure
-    function double(uint x) external pure returns (uint) {
+    function pouble(uint x) external pure returns (uint) {
         return x * 2;
     }
 
     // double overload
 
-    function double(uint pandit, uint tara) external pure returns (uint, uint) {
-        (double(pandit), double(tara));
-    }
+    // function double(uint pandit, uint tara) external pure returns (uint, uint) {
+    //     (double(pandit), double(tara));
+    // }
+
+    function pouble(uint p, uint t) external pure returns (uint, uint) {
+return (pouble(p), pouble(t));
+	}
 }
