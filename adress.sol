@@ -45,7 +45,7 @@ contract MyHandle {
     }
 }
 
-contract Pandit {
+contract PanditD {
     uint public myVariable;
     
     function getMyVariable() public view returns (uint) {
