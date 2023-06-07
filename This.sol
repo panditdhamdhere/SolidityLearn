@@ -17,9 +17,5 @@ contract MyContract {
         charity.transfer(address(this).balance);
     }
 
-    // function tip() public payable {
-    //     // forwards all remaining gas along
-    //     (bool success, ) = owner.call{value: msg.value}("");
-       
-    // } // console.log(success);
+
 }
