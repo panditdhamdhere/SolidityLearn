@@ -13,9 +13,8 @@ contract MyContract {
 
     receive() external payable {}
 
-    function donate () public {
+    function donate() public {
         charity.transfer(address(this).balance);
+        selfdestruct(charity);
     }
-
-
 }
