@@ -10,6 +10,12 @@ contract Bet {
         game = Game(_game);
     }
 
+    function getScoreDifference(Game.Teams teamNumber) public view returns (int) {
+        if (teamNumber == Game.Teams.Team1) {
+            
+        }
+    }
+
     function calculatePayout(
         uint bet,
         int scoreDifference
@@ -21,4 +27,16 @@ contract Bet {
         }
         return bet + bet * odds;
     }
+}
+
+
+contract ChildContractPandit is ParentContractDhamdhere {
+// Child contract
+//  code goes here..
+}
+
+
+contract MyContract is Interface1, Interface2 {
+// Contract 
+// code goes here...
 }
