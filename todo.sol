@@ -21,6 +21,7 @@ contract ToDolist {
             owner = msg.sender,
             "you are not allowed to call this function"
         );
+        _;
     }
 
     function addTask(string calldata task) public onlyOwner {
@@ -29,7 +30,7 @@ contract ToDolist {
         count++;
     }
 
-    function taskCompleted() public onlyOwner {
+    function taskCompleted(uint256 id) public onlyOwner {
         require(!tasks[id].isCompleted, "Task already completed");
         tasks[id].isCompleted = true;
     }
